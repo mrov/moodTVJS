@@ -90,27 +90,27 @@ MongoClient.connect(url, function(err, db) {
   Bot.on('message', chatter => {
     if (chatter.emotes) {
       // Bloco de Ifs dos emotes
-      if (pogchamp.test(chatter.emotes)) { channelEmotion["impressive"] += 1; console.log("Pogchamp"); }
-      else if (Kreygasm.test(chatter.emotes)) { channelEmotion["impressive"] += 1; console.log("Kreygasm"); }
-      else if (OhMyDog.test(chatter.emotes)) { channelEmotion["impressive"] += 1; console.log("OhMyDog"); }
-      else if (lul.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("LUL"); }
-      else if (kappa.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("Kappa"); }
-      else if (fourhead.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("4Head"); }
-      else if (EleGiggle.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("EleGiggle"); }
-      else if (BrokeBack.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("BrokeBack"); }
-      else if (CurseLit.test(chatter.emotes)) { channelEmotion["hype"] += 1; console.log("CurseLit"); }
-      else if (TwitchLit.test(chatter.emotes)) { channelEmotion["hype"] += 1; console.log("TwitchLit"); }
-      else if (VoHiYo.test(chatter.emotes)) { channelEmotion["hype"] += 1; console.log("VoHiYo"); }
-      else if (TriHard.test(chatter.emotes)) { channelEmotion["hype"] += 1; console.log("TriHard"); }
-      else if (BabyRage.test(chatter.emotes)) { channelEmotion["sad"] += 1; console.log("BabyRage"); }
-      else if (BibleThump.test(chatter.emotes)) { channelEmotion["sad"] += 1; console.log("BibleThump"); }
-      else if (DansGame.test(chatter.emotes)) { channelEmotion["bad"] += 1; console.log("DansGame"); }
-      else if (WutFace.test(chatter.emotes)) { channelEmotion["bad"] += 1; console.log("WutFace"); }
-      else if (residentSleep.test(chatter.emotes)) { channelEmotion["bad"] += 1; console.log("Residentsleep"); }
-      else if (FrankerZ.test(chatter.emotes)) { channelEmotion["spam"] += 1; console.log("FrankerZ"); }
-      else if (SMOrc.test(chatter.emotes)) { channelEmotion["spam"] += 1; console.log("SMOrc"); }
-      else if (cmonBruh.test(chatter.emotes)) { channelEmotion["disbelieve"] += 1; console.log("cmonBruh"); }
-      else if (NotLikeThis.test(chatter.emotes)) { channelEmotion["disbelieve"] += 1; console.log("NotLikeThis"); }
+      if (pogchamp.test(chatter.emotes)) { channelEmotion["impressive"] += 1; console.log("Pogchamp -> Impressive at " + chatter.channel); }
+      else if (Kreygasm.test(chatter.emotes)) { channelEmotion["impressive"] += 1; console.log("Kreygasm -> Impressive at " + chatter.channel); }
+      else if (OhMyDog.test(chatter.emotes)) { channelEmotion["impressive"] += 1; console.log("OhMyDog -> Impressive at " + chatter.channel); }
+      else if (lul.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("LUL -> Funny at " + chatter.channel); }
+      else if (kappa.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("Kappa -> Funny at " + chatter.channel); }
+      else if (fourhead.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("4Head -> Funny at " + chatter.channel); }
+      else if (EleGiggle.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("EleGiggle -> Funny at " + chatter.channel); }
+      else if (BrokeBack.test(chatter.emotes)) { channelEmotion["funny"] += 1; console.log("BrokeBack -> Funny at " + chatter.channel); }
+      else if (CurseLit.test(chatter.emotes)) { channelEmotion["hype"] += 1; console.log("CurseLit -> Hype at " + chatter.channel); }
+      else if (TwitchLit.test(chatter.emotes)) { channelEmotion["hype"] += 1; console.log("TwitchLit -> Hype at " + chatter.channel); }
+      else if (VoHiYo.test(chatter.emotes)) { channelEmotion["hype"] += 1; console.log("VoHiYo  -> Hype at " + chatter.channel); }
+      else if (TriHard.test(chatter.emotes)) { channelEmotion["hype"] += 1; console.log("TriHard -> Hype at " + chatter.channel); }
+      else if (BabyRage.test(chatter.emotes)) { channelEmotion["sad"] += 1; console.log("BabyRage -> Sad at " + chatter.channel); }
+      else if (BibleThump.test(chatter.emotes)) { channelEmotion["sad"] += 1; console.log("BibleThump -> Sad at " + chatter.channel); }
+      else if (DansGame.test(chatter.emotes)) { channelEmotion["bad"] += 1; console.log("DansGame -> Bad at " + chatter.channel); }
+      else if (WutFace.test(chatter.emotes)) { channelEmotion["bad"] += 1; console.log("WutFace -> Bad at " + chatter.channel); }
+      else if (residentSleep.test(chatter.emotes)) { channelEmotion["bad"] += 1; console.log("Residentsleep -> Bad at " + chatter.channel); }
+      else if (FrankerZ.test(chatter.emotes)) { channelEmotion["spam"] += 1; console.log("FrankerZ -> Spam at " + chatter.channel); }
+      else if (SMOrc.test(chatter.emotes)) { channelEmotion["spam"] += 1; console.log("SMOrc -> Spam at " + chatter.channel); }
+      else if (cmonBruh.test(chatter.emotes)) { channelEmotion["disbelieve"] += 1; console.log("cmonBruh -> Disbelieve at " + chatter.channel); }
+      else if (NotLikeThis.test(chatter.emotes)) { channelEmotion["disbelieve"] += 1; console.log("NotLikeThis -> Disbelieve at " + chatter.channel); }
     } else {
     // Bloco de Ifs de expressões
       // kkkkk+
@@ -139,7 +139,6 @@ MongoClient.connect(url, function(err, db) {
       if (err) throw err;
       console.log("documents updated ", res.result.nModified);
     });
-    console.log(channelEmotion)
 
   }, 20000);
 
